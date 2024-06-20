@@ -1,0 +1,11 @@
+C:\myprojects\flashcardStudy\flascardStudy.Core\bin\Debug\net8.0\flascardStudy.Core.deps.json
+C:\myprojects\flashcardStudy\flascardStudy.Core\bin\Debug\net8.0\flascardStudy.Core.dll
+C:\myprojects\flashcardStudy\flascardStudy.Core\bin\Debug\net8.0\flascardStudy.Core.pdb
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.AssemblyInfoInputs.cache
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.AssemblyInfo.cs
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.csproj.CoreCompileInputs.cache
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.dll
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\refint\flascardStudy.Core.dll
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\flascardStudy.Core.pdb
+C:\myprojects\flashcardStudy\flascardStudy.Core\obj\Debug\net8.0\ref\flascardStudy.Core.dll

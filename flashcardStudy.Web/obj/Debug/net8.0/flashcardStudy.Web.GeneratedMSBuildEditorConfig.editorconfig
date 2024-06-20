@@ -1,0 +1,59 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = flashcardStudy.Web
+build_property.RootNamespace = flashcardStudy.Web
+build_property.ProjectDir = C:\myprojects\flashcardStudy\flashcardStudy.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\myprojects\flashcardStudy\flashcardStudy.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/Decks/CreateDeck.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVja3NcQ3JlYXRlRGVjay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/Decks/EditDeck.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVja3NcRWRpdERlY2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/Decks/GetAll.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVja3NcR2V0QWxsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/FlashCards/CreateCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmxhc2hDYXJkc1xDcmVhdGVDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/FlashCards/EditCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmxhc2hDYXJkc1xFZGl0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/myprojects/flashcardStudy/flashcardStudy.Web/Pages/FlashCards/GetAllByDeck.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmxhc2hDYXJkc1xHZXRBbGxCeURlY2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-431fi6zjxm

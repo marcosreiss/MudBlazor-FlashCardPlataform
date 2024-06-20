@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider IsDarkMode="true" />
+<MudDialogProvider /> <!-- Pop ups/ modais-->
+<MudSnackbarProvider /> <!-- mensagens de feedback-->
+
+
+<MudLayout>
+
+    <MudAppBar 
+        Color="Color.Surface"
+        Elevation="4"
+    >
+        <MudIconButton Icon="@Icons.TwoTone.Home"
+                       Color="Color.Inherit"
+                       Href="/" />
+        <MudSpacer />
+
+        FlashCard Study
+    </MudAppBar>
+
+    <MudMainContent>
+        <MudContainer>
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>

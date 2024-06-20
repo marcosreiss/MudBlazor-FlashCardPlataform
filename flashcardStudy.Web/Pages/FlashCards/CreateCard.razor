@@ -1,0 +1,45 @@
+﻿@page "/flashcards/create"
+@inherits CreateFlashCardPage
+
+<MudText Typo="Typo.h3" Class="text-center">Novo Card</MudText>
+
+<MudPaper Class="pa-8 mt-4">
+    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync" >
+        <DataAnnotationsValidator />
+
+        <MudTextField Label="Pergunta"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="@InputModel.Front"
+                      For="()=> InputModel.Front" />
+
+        <MudTextField Label="Resposta"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="@InputModel.Back"
+                      For="()=> InputModel.Back" />
+
+        <MudSelect @bind-Value="@InputModel.DeckId"
+                   Label="Deck:">
+            @foreach (var deck in Decks)
+            {
+                <MudSelectItem Value="@deck.Id">@deck.Title</MudSelectItem>
+            }
+        </MudSelect>
+
+        @if (IsBusy is false)
+        {
+            <MudButton ButtonType="ButtonType.Submit"
+                       Class="mt-5"
+                       Color="Color.Primary"
+                       Variant="Variant.Filled">
+                Criar
+            </MudButton>
+        }
+        else
+        {
+            <MudProgressCircular Indeterminate Color="Color.Primary" />
+        }
+
+    </EditForm>
+</MudPaper>
+
+

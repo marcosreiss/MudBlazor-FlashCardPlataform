@@ -1,0 +1,47 @@
+﻿@page "/flashcards/{deckId:int}"
+@inherits GetAllFlashCardsByDeckPage
+
+@if(IsBusy == false)
+{
+
+    <MudText Typo="Typo.h3" Class="ma-5 text-center">@deckName</MudText>
+
+    <div class="action-buttons">
+        <MudIconButton OnClick="OnEditButtonClicked"
+                       Color="Color.Info"
+                       Icon="@Icons.Material.Filled.Edit" />
+
+        <MudIconButton OnClick="()=> OnDeleteButtonClickedAsync(FlashCards[position].Id)"
+                       Color="Color.Error"
+                       Icon="@Icons.Material.Filled.Delete" />
+    </div>
+
+    <div class="card">
+        <div class="card-side front">
+            <div class="wrap-word">
+                @FlashCards[position].Front
+            </div>
+        </div>
+
+        <div class="card-side back">
+            <div class="wrap-word">
+                @FlashCards[position].Back
+            </div>
+        </div>
+    </div>
+
+    <div class="passing-buttons">
+        <MudButton OnClick="PreviusCard"
+                   Variant="Variant.Filled"
+                   Color="Color.Primary">Anterior</MudButton>
+
+        <MudSpacer />
+
+        <MudButton OnClick="NextCard"
+                   Variant="Variant.Filled"
+                   Color="Color.Primary">Proximo</MudButton>
+    </div>
+
+}
+
+

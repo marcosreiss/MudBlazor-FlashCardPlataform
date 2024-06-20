@@ -1,0 +1,34 @@
+﻿@page "/flashcards/edit/{id:int}"
+@inherits EditCardPage
+
+<MudText Typo="Typo.h3" Class="text-center">Editar Card</MudText>
+
+<MudPaper Class="pa-8 mt-4">
+    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync">
+        <DataAnnotationsValidator />
+
+        <MudTextField Label="Pergunta"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="@InputModel.Front"
+                      For="()=> InputModel.Front" />
+
+        <MudTextField Label="Resposta"
+                      HelperText="Campo obrigatório"
+                      @bind-Value="@InputModel.Back"
+                      For="()=> InputModel.Back" />
+
+        @if (IsBusy is false)
+        {
+            <MudButton ButtonType="ButtonType.Submit"
+                       Class="mt-5"
+                       Color="Color.Primary"
+                       Variant="Variant.Filled">
+                Editar
+            </MudButton>
+        }
+        else
+        {
+            <MudProgressCircular Indeterminate Color="Color.Primary" />
+        }
+    </EditForm>
+</MudPaper>

@@ -1,0 +1,66 @@
+﻿@page "/"
+@inherits GetAllDecksPage
+
+<MudText Typo="Typo.h3" Class="ma-10 text-center" >Decks</MudText>
+
+
+@if (IsBusy)
+{
+    <MudText Typo="Typo.h3" Class="ma-10 text-center">
+        <MudProgressCircular Indeterminate Size="Size.Large" />
+    </MudText>
+}
+else
+{
+
+    <div Class="d-flex justify-end">
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   StartIcon="@Icons.TwoTone.Add"
+                   Href="/decks/create">
+            Novo Deck
+        </MudButton>
+
+        <MudSpacer />
+
+        <MudButton Variant="Variant.Filled"
+                   Color="Color.Primary"
+                   StartIcon="@Icons.TwoTone.Add"
+                   Href="/flashcards/create">
+            Novo FlashCard
+        </MudButton>
+    </div>
+
+    <MudDataGrid Class="mt-4 mb-10"
+                 Items="@Decks">
+
+        <Columns>
+            <PropertyColumn Property="x => x.Id" Title="#" />
+
+            <TemplateColumn Title="Decks">
+                <CellTemplate>
+                    <MudButton OnClick="()=> OnDeckButtonClickAsync(context.Item.Id)">
+                        <MudText>
+                            @context.Item.Title
+                        </MudText>
+                    </MudButton>
+                </CellTemplate>
+            </TemplateColumn>
+
+            <TemplateColumn Class="d-flex justify-end">
+                <CellTemplate>
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                   Color="Color.Error"
+                                   OnClick="()=> OnDeleteButtonClickedAsync(context.Item.Id, context.Item.Title)" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                   Color="Color.Info"
+                                   OnClick="()=> OnEditButtomClickedAsync(context.Item.Id)" />
+                </CellTemplate>
+            </TemplateColumn>
+
+
+
+        </Columns>
+
+    </MudDataGrid>
+}

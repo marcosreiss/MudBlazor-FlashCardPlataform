@@ -1,0 +1,30 @@
+﻿@page "/decks/create"
+@inherits CreateDeckPage
+
+<MudText Typo="Typo.h3">Novo Deck</MudText>
+
+<MudPaper Class="pa-8 mt-4" >
+    <EditForm Model="@InputModel" OnValidSubmit="OnValidSubmitAsync" >
+        <DataAnnotationsValidator />
+
+        <MudTextField 
+            Label="Nome do Deck" 
+            HelperText="Campo Obrigatório"
+            @bind-Value="InputModel.Title"
+            For="@(()=>InputModel.Title)"/>
+
+        @if (IsBusy)
+        {
+            <MudProgressCircular Indeterminate Color="Color.Primary" />
+        }
+        else
+        {
+            <MudButton ButtonType="ButtonType.Submit"
+                       Variant="Variant.Filled"
+                       Color="Color.Primary">
+                Criar
+            </MudButton>
+        }
+
+    </EditForm>
+</MudPaper>

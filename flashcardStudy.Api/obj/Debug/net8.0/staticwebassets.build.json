@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wqFFJi4Ph5cr2EiaYPp0oVphZzGiXIF5zig6ou9tomU=",
+  "Source": "flashcardStudy.Api",
+  "BasePath": "_content/flashcardStudy.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
